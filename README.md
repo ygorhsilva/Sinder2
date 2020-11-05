@@ -1,0 +1,2 @@
+# Sinder2
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e21850bbc0f040cd9f18c4ea59c7efce)](https://app.codacy.com/gh/ygorhsilva/Sinder2?utm_source=github.com&utm_medium=referral&utm_content=ygorhsilva/Sinder2&utm_campaign=Badge_Grade_Settings)
