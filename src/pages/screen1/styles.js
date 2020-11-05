@@ -4,7 +4,24 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: stretch;
+    flex-direction: column;
+    align-items: center;
+
+    place-content: top;
 `;
+
+export const Header = styled.header`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    place-content: top;
+
+    width: 100%;
+    h1 {
+      font-size: 50px;
+    }
+`
 
 export const Content = styled.div`
     display: flex;
@@ -15,17 +32,21 @@ export const Content = styled.div`
 
     width: 100%;
 
+    margin-top: 30px;
+
     h1 {
         font-size: 50px;
-        margin-bottom: 100px;
-        position: absolute;
-        top: 5px;
+        margin-bottom: 130px;
+        margin-left: 60px;
+
     }
 
-    a {
-        margin-top: 50px;
-        padding-left: 60px;
-        padding-right: 60px;
+    button {
+        margin-top: 20px;
+        margin-left: 70px;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bootm: 30px;
     }
 
     input {

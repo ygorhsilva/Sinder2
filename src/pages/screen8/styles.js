@@ -17,19 +17,19 @@ export const Content = styled.div`
 
     h1 {
         font-size: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
         top: 5px;
+        margin-left: 15px;
     }
 
-    a {   
-        margin-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-        transition: color 0.2s;
-
     input {
-        width: 200px;
-        height: 30px;
+      height: 20px;
+    }
+    
+    button {
+        margin-top: 20px;
+        margin-left: 40px;
+        padding: 18px;
     }
 
     select {

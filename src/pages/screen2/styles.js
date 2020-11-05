@@ -3,8 +3,66 @@ import styled from 'styled-components';
 export const Container = styled.div`
     height: 100vh;
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+
+    input {
+        width: 25%;
+    }
+    h1 {
+        color: white;
+    }
+
 `;
+
+
+export const Icon = styled.div`
+      > a {
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        border: none;
+        padding: 0;
+    }
+`
+
+export const Card = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: left;
+
+
+    height: 100px;
+    width: 35%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+
+`
+
+
+export const CardInfo = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    margin-bottom: 15px;
+    
+    span.title {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 0px;
+        line-height: 7px;
+    }
+`
+
+
 
 export const Content = styled.div`
     display: flex;
@@ -12,6 +70,8 @@ export const Content = styled.div`
     align-items: center;
 
     place-content: center;
+
+    margin-top: 25px;
 
     width: 100%;
 
@@ -39,16 +99,6 @@ export const Content = styled.div`
     }
 
   
-`
-
-export const Icon = styled.div`
-      > a {
-        position: absolute;
-        top: 2px;
-        left: 1px;
-        border: none;
-        padding: 0;
-    }
 `
 
 export const Lup = styled.div`

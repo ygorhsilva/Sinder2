@@ -12,9 +12,20 @@ import api from '../../services';
 function Screen8() {
   const history = useHistory();
   const formRef = useRef(null);
-  function handleSubmit(data, { reset }) {
-    api.post('/servicos', data)
-    history.push('/edicaoconcluida');
+  const id = (window.location.pathname.replace('/editarperfil/', ''));
+ async function handleSubmit(data, { reset }) {
+   try{
+       console.log(data);
+   const response = await api.get(`/servicos/${id}`);
+   if(data.senha === response.data.senha) {
+      await api.put(`/servicos/${id}`, data)
+      history.push('/edicaoconcluida');
+   }
+   } catch (err) {
+     console.log(err)
+   }
+ 
+
   }
 
   return (
@@ -35,7 +46,7 @@ function Screen8() {
             <h2> Email: </h2>
             <Input  name="email" />
             <h2>Confirmar Senha: </h2>
-            <Input  name="password" type="password" />
+            <Input  name="senha" type="password" />
             <button type="submit">Salvar</button>
           </Form>
         </Content>

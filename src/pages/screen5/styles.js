@@ -4,7 +4,25 @@ export const Container = styled.div`
     height: 100vh;
     display: flex;
     align-items: stretch;
+    flex-direction: column;
+    align-items: center;
+
+    place-content: top;
 `;
+
+export const Header = styled.header`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    place-content: top;
+
+    width: 100%;
+    h1 {
+      font-size: 50px;
+      margin-right: 20px;
+    }
+`
 
 export const Content = styled.div`
     display: flex;
@@ -19,13 +37,15 @@ export const Content = styled.div`
         font-size: 50px;
         margin-bottom: 30px;
         top: 5px;
+        margin-left: 65px;
     }
 
-    a {
-        margin-top: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
+    button {
+        margin-top: 20px;
+        margin-left: 80px;
+        padding: 18px;
     }
+
 
     input {
         width: 40vh;

@@ -4,7 +4,6 @@ import {Switch,Route,BrowserRouter} from "react-router-dom";
 import Screen0 from "./pages/screen0/screen0"
 import Screen1 from "./pages/screen1/screen1"
 import Screen2 from "./pages/screen2/screen2"
-import Screen3 from "./pages/screen3/screen3"
 import Screen4 from "./pages/screen4/screen4"
 import Screen5 from "./pages/screen5/screen5"
 import Screen6 from "./pages/screen6/screen6"
@@ -20,7 +19,6 @@ export default function Routes(){
        <Route path="/" exact component={Screen0} />
        <Route path="/login" component={Screen1} />
        <Route path="/navegar" component={Screen2} />
-       <Route path="/xdetalhes" component={Screen3} />
        <Route path="/cadastrar" component={Screen4} />
        <Route path="/cadastrarusuario" component={Screen5} />
        <Route path="/cadastrarprestador" component={Screen6} />
